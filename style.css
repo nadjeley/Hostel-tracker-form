@@ -1,0 +1,204 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.screen{
+   position:fixed;
+   top:0;
+   left:0;
+   height:100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color:white;
+}
+
+
+.hostel path{
+    fill:transparent;
+    stroke-width:25;
+    stroke:rgb(24, 22, 22);
+    stroke-dasharray:3100;
+    stroke-dashoffset:500;
+    animation: anihostel 3s linear forwards;
+}
+
+
+
+@keyframes anihostel{
+    0%{
+        stroke-dashoffset:0;
+    }
+  
+    40%{
+        stroke-dashoffset: 2200;
+    }
+   
+    80%{
+        stroke-dashoffset:4200 ;
+        fill:transparent;
+    }
+    100%{
+        stroke-dashoffset:6200;
+        fill:white;
+    }
+}
+.sun{
+    position:fixed;
+    top:250px;
+    right:680px;
+   
+    width: 20px;
+	height: 20px;
+	background-color: #FFDE00;
+	border-radius: 50%;
+	box-shadow:
+		0 0 0 20px #FFDE0080,
+		0 0 0 40px #FFDE0040,
+		0 0 0 60px #FFDE0020,
+		0 0 40px #FFDE0010;
+	animation:
+		sunrise 2s linear infinite forwards,
+		rays  2s infinite linear;
+}
+
+@keyframes sunrise {
+	0% {
+		box-shadow: none;
+	}
+}
+
+@keyframes rays {
+	0% {
+		box-shadow: 
+		0 0 0 0 #FFDE0080,
+		0 0 0 20px #FFDE0080,
+		0 0 0 40px #FFDE0040,
+		
+	}
+	100% {
+		box-shadow: 
+		0 0 0 20px #FFDE0080,
+		0 0 0 40px #FFDE0040,
+	
+		
+	}
+}
+
+#homepage{
+  position:relative;
+  animation: home 12s;
+
+}
+@keyframes home{
+    from {bottom:-900px; opacity:0;}
+
+    to {
+        bottom:0px;  opacity:1;
+    }
+}
+
+@media only screen 
+and (min-height: 810px) and  (max-height: 812px){
+    .hostel{
+       
+        margin-top: -100px;
+        margin-left:-20px;
+    }
+    .sun{
+        display:none;
+    }
+
+}
+@media only screen and (min-width: 500px) and (max-width: 600px){
+     .hostel{
+         margin-top:-120px;
+         margin-left:20px;
+     }
+}
+@media only screen and (max-width:320px){
+    .hostel{
+        margin-left:15px;
+        
+    }
+} 
+@media only screen and (min-width:375px) and (max-width:380px){
+    .hostel{
+        margin-left:23px;
+        
+    }
+} 
+
+@media only screen and (min-height:736px) and (max-height:740px){
+    .hostel{
+        margin-left :15px;
+        margin-top:-50px;
+        
+    }
+    .sun{
+        position:fixed;
+        top:230px;
+        right:280px;
+       
+        width: 20px;
+        height: 20px;
+        background-color: #FFDE00;
+        border-radius: 50%;
+        box-shadow:
+            0 0 0 20px #FFDE0080,
+            0 0 0 40px #FFDE0040,
+            0 0 0 60px #FFDE0020,
+            0 0 40px #FFDE0010;
+        animation:
+            sunrise 2s linear infinite forwards,
+            rays  2s infinite linear;
+    }
+    
+    
+} 
+@media only screen and (min-width:768px) and (max-width:1000px){
+    .hostel{
+        margin-left :15px;
+        margin-top:-10px;
+        
+    }
+    .sun{
+        position:fixed;
+        top:400px;
+        right:290px;
+       
+        width: 20px;
+        height: 20px;
+        background-color: #FFDE00;
+        border-radius: 50%;
+        box-shadow:
+            0 0 0 20px #FFDE0080,
+            0 0 0 40px #FFDE0040,
+            0 0 0 60px #FFDE0020,
+            0 0 40px #FFDE0010;
+        animation:
+            sunrise 2s linear infinite forwards,
+            rays  2s infinite linear;
+    }
+} 
+@media only screen and (min-width:1024px) and (max-width:1500px){
+    
+    .sun{
+        position:fixed;
+        top:570px;
+        right:400px;
+       
+        width: 20px;
+        height: 20px;
+        background-color: #FFDE00;
+        border-radius: 50%;
+        box-shadow:
+            0 0 0 20px #FFDE0080,
+            0 0 0 40px #FFDE0040,
+            0 0 0 60px #FFDE0020,
+            0 0 40px #FFDE0010;
+        animation:
+            sunrise 2s linear infinite forwards,
+            rays  2s infinite linear;
+    }
+} 

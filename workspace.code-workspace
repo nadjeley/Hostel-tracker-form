@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "Hostel_Report_Tracker-SEAA",
+			"path": "..\\..\\Hostel_Report_Tracker-SEAA"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "html-css-javascript"
+	}
+}
